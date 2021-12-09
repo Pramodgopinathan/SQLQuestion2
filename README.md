@@ -28,3 +28,13 @@ FROM Customer
 sum(OwnershipPercentage):  Sum all Non Null values of Column salary i.e., 177 <br />
 sum(Distinct OwnershipPercentage): Sum of all distinct Non-Null values i.e., 177
 
+### AVG
+
+```SQL
+SELECT AVG(OwnershipPercentage)
+FROM Customer
+```
+
+
+Avg(OwnershipPercentage) = Sum(OwnershipPercentage) / count(OwnershipPercentage) = 44.25 <br />
+Avg(Distinct OwnershipPercentage) = sum(Distinct OwnershipPercentage) / Count(Distinct OwnershipPercentage) = 44.25 <br />
