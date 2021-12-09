@@ -38,3 +38,18 @@ FROM Customer
 
 Avg(OwnershipPercentage) = Sum(OwnershipPercentage) / count(OwnershipPercentage) = 44.25 <br />
 Avg(Distinct OwnershipPercentage) = sum(Distinct OwnershipPercentage) / Count(Distinct OwnershipPercentage) = 44.25 <br />
+
+### MIN & MAX
+
+
+```SQL
+SELECT MIN(OwnershipPercentage)
+FROM Customer
+
+SELECT MAX(OwnershipPercentage)
+FROM Customer
+
+```
+
+Min(salary): Minimum value in the salary column except NULL i.e., 25.
+Max(salary): Maximum value in the salary i.e., 86.
