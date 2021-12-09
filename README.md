@@ -54,6 +54,7 @@ FROM Customer
 Min(salary): Minimum value in the salary column except NULL i.e., 25. <br />
 Max(salary): Maximum value in the salary i.e., 86.
 
+
 ```SQL
 
 CREATE TABLE categories
@@ -300,3 +301,16 @@ VALUES
 (900, 'Electronic Arts', 'Redwood City', 'California');
 
 ```
+### SQL INNER JOIN (simple join)
+
+
+```SQL
+SELECT customers.customer_id, orders.order_id, orders.order_date
+FROM customers 
+INNER JOIN orders
+ON customers.customer_id = orders.customer_id
+ORDER BY customers.customer_id;
+
+```
+
+
