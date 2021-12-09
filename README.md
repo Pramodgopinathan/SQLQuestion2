@@ -303,6 +303,7 @@ VALUES
 ```
 ### SQL INNER JOIN (simple join)
 
+![](https://github.com/Pramodgopinathan/SQLQuestion2/blob/2a888bc967e6558e9d6635ef4f6f8450807eca46/inner_join.gif)
 
 ```SQL
 SELECT customers.customer_id, orders.order_id, orders.order_date
