@@ -8,6 +8,8 @@ INSERT INTO Customer VALUES (2, "BankB", "B01", 89, 20190101) ;
 INSERT INTO Customer VALUES (2, "BankB", "B02", 35, 20200101) ;
 ```
 
+### COUNT 
+
 ```SQL
 SELECT COUNT(*)
 FROM Customer
@@ -15,4 +17,14 @@ FROM Customer
 Count(*): Returns total number of records .i.e 4 <br />
 Count(product): Return number of Non Null values over the column salary. i.e 4. <br />
 Count(Distinct name):  Return number of distinct Non Null values over the column name.i.e 4 <br />
+
+### SUM
+
+```SQL
+SELECT SUM(OwnershipPercentage)
+FROM Customer
+```
+
+sum(OwnershipPercentage):  Sum all Non Null values of Column salary i.e., 177 <br />
+sum(Distinct OwnershipPercentage): Sum of all distinct Non-Null values i.e., 177
 
