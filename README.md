@@ -311,7 +311,40 @@ FROM customers
 INNER JOIN orders
 ON customers.customer_id = orders.customer_id
 ORDER BY customers.customer_id;
-
 ```
 
 
+### SQL LEFT OUTER JOIN
+
+![](https://github.com/Pramodgopinathan/SQLQuestion2/blob/beb787840bd694bc1c1a5be539b495aded7974e8/left_outer_join.gif)
+
+```SQL
+SELECT customers.customer_id, orders.order_id, orders.order_date
+FROM customers 
+LEFT OUTER JOIN orders
+ON customers.customer_id = orders.customer_id
+ORDER BY customers.customer_id;
+```
+### SQL RIGHT OUTER JOIN
+
+![](https://github.com/Pramodgopinathan/SQLQuestion2/blob/beb787840bd694bc1c1a5be539b495aded7974e8/right_outer_join.gif)
+
+```SQL
+SELECT customers.customer_id, orders.order_id, orders.order_date
+FROM customers 
+RIGHT OUTER JOIN orders
+ON customers.customer_id = orders.customer_id
+ORDER BY customers.customer_id;
+```
+
+### SQL FULL OUTER JOIN
+
+![](https://github.com/Pramodgopinathan/SQLQuestion2/blob/beb787840bd694bc1c1a5be539b495aded7974e8/full_outer_join.gif)
+
+```SQL
+SELECT customers.customer_id, orders.order_id, orders.order_date
+FROM customers 
+FULL OUTER JOIN orders
+ON customers.customer_id = orders.customer_id
+ORDER BY customers.customer_id;
+```
